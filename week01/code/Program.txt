@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Test Problem 1: MultiplesOf
+        Console.WriteLine("--- Testing MultiplesOf(7, 5) ---");
+        double[] multiples = Arrays.MultiplesOf(7, 5);
+        Console.WriteLine(string.Join(", ", multiples)); 
+
+        Console.WriteLine("\n--- Testing RotateListRight ---");
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int amount = 3;
+        
+        Console.WriteLine($"Original: {string.Join(", ", numbers)}");
+        Arrays.RotateListRight(numbers, amount);
+        Console.WriteLine($"Rotated by {amount}: {string.Join(", ", numbers)}");
+    }
+}
