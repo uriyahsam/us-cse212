@@ -4,6 +4,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 // DO NOT MODIFY THE CODE IN THE TESTS in this file, just the comments above the tests. 
 // Fix the code being tested to match requirements and make all tests pass. 
 
+// Defects found summary:
+// Defect(s) Found: PersonQueue.Enqueue() was adding to front instead of back using _queue.Insert(0, person). 
+// Changed to _queue.Add(person) to add to back for proper FIFO queue behavior.
 [TestClass]
 public class TakingTurnsQueueTests
 {
