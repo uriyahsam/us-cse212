@@ -129,6 +129,7 @@ public class RemoveTests
     {
         var ll = new LinkedList();
 
+
         ll.InsertHead(2);
         ll.InsertHead(2);
         ll.InsertHead(3);
